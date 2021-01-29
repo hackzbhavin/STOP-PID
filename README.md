@@ -32,8 +32,8 @@ Version 1
 
 
 ------
-to check pid 
-------
+to check pid of ports
+-------
 
 - `lsof -i -P`
 - `lsof -i tcp`
