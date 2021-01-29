@@ -35,7 +35,7 @@ Version 1
 to check pid 
 ------
 
-`lsof -i -P`
-
+- `lsof -i -P`
+- `lsof -i tcp`
 
 
