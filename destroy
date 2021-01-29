@@ -1,0 +1,13 @@
+#!/bin/bash
+
+pid=$(lsof -n -i :"$1" | tail -1 | awk '{print $2}')
+
+if [[ -n $pid ]]
+
+then
+    kill -9 "$pid" && echo "Process which blocked port $1 was killed" || echo "Could not kill process blocking port $1..."
+
+else
+    echo "Seems like no process is blocking port $1"
+
+fi
